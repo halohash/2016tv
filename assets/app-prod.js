@@ -5994,7 +5994,7 @@
             zg.f.forEach(function (font) {
                 a.Lp("@font-face", {
                     "font-family": font.name,
-                    src: `url('/assets/${font.file}') format('${font.format}')`
+                    src: `url('https://halohash.github.io/2016tv/assets/${font.file}') format('${font.format}')`
                 });
 
                 var styles = {
@@ -15741,7 +15741,7 @@
             return this.f.br ? "in_t" : this.f.Xi ? "in_g" : this.f.$q ? "in_vi" : this.f.Zi ? "in_r" : this.f.dm ? "" : "in_v1"
         };
         d.Un = function () {
-            return this.f.dm ? "https://" + this.f.dm : this.f.AB ? "/youtubei/v1" : this.f.br ? "http://www-googleapis-test.sandbox.google.com/youtubei/vi" : this.f.Xi ? "https://staging-youtubei.sandbox.googleapis.com/v1" : this.f.$q ? this.f.Yi ? "https://youtubei.googleapis.com/youtubei/vi" : "https://www.googleapis.com/youtubei/vi" : this.f.Zi ? "https://web.archive.org/web/20160228021433/https://www-googleapis-staging.sandbox.google.com/youtubei/v1release" : this.f.Yi ? APP_URL + "/api" : APP_URL + "/api"
+            return this.f.dm ? "https://" + this.f.dm : this.f.AB ? "/youtubei/v1" : this.f.br ? "http://www-googleapis-test.sandbox.google.com/youtubei/vi" : this.f.Xi ? "https://staging-youtubei.sandbox.googleapis.com/v1" : this.f.$q ? this.f.Yi ? "https://youtubei.googleapis.com/youtubei/vi" : "https://www.googleapis.com/youtubei/vi" : this.f.Zi ? "https://web.archive.org/web/20160228021433/https://www-googleapis-staging.sandbox.google.com/youtubei/v1release" : this.f.Yi ? "https://yt2009.truehosting.net/youtubei/v1" : "https://yt2009.truehosting.net/youtubei/v1"
         };
         d.fk = function (a) {
             a = a || {};
@@ -15836,7 +15836,7 @@
             if (-1 == a.f.indexOf("//")) {
                 a.f = APP_URL + a.f;
                 var c = -1 == a.f.indexOf("?") ? "?" : "&";
-                a.f += c + "key=" + this.i
+                a.f += c + "mey=" + this.i
             }
             b && (a.headers = a.headers || {}, a.headers.Authorization = "Bearer " + b)
         };

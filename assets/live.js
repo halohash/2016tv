@@ -111,14 +111,14 @@
                 injectScript("loadStylesheets();");
             } else {
                 window.CLOSURE_NO_DEPS = true;
-                var cssPath = window.environment.tv_css || "/app-prod.css";
-                loadStylesheet(r + cssPath);
+                var cssPath = "https://halohash.github.io/app-prod.css";
+                loadStylesheet(cssPath);
                 loadScript(z ? r + "/chromecast-concat-bundle.js" : r + "/app-concat-bundle.js");
             }
         } else {
-            var cssPath = window.environment.tv_css || "/app-prod.css";
-            loadStylesheet(r + cssPath);
-            loadScript(r + window.environment.tv_binary);
+             var cssPath = "https://halohash.github.io/app-prod.css";
+            loadStylesheet(cssPath);
+            loadScript(window.environment.tv_binary);
             if (k || l || m) loadScript(window.environment.player_url);
         }
 
