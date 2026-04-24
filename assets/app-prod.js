@@ -5994,7 +5994,7 @@
             zg.f.forEach(function (font) {
                 a.Lp("@font-face", {
                     "font-family": font.name,
-                    src: `url('https://halohash.github.io/2016tv/assets/${font.file}') format('${font.format}')`
+                    src: `url('https://tv36.pages.dev/assets/${font.file}') format('${font.format}')`
                 });
 
                 var styles = {
@@ -15741,7 +15741,7 @@
             return this.f.br ? "in_t" : this.f.Xi ? "in_g" : this.f.$q ? "in_vi" : this.f.Zi ? "in_r" : this.f.dm ? "" : "in_v1"
         };
         d.Un = function () {
-            return this.f.dm ? "https://" + this.f.dm : this.f.AB ? "/youtubei/v1" : this.f.br ? "http://www-googleapis-test.sandbox.google.com/youtubei/vi" : this.f.Xi ? "https://staging-youtubei.sandbox.googleapis.com/v1" : this.f.$q ? this.f.Yi ? "https://youtubei.googleapis.com/youtubei/vi" : "https://www.googleapis.com/youtubei/vi" : this.f.Zi ? "https://web.archive.org/web/20160228021433/https://www-googleapis-staging.sandbox.google.com/youtubei/v1release" : this.f.Yi ? "https://test.cors.workers.dev/?https://yt2009.truehosting.net/youtubei/v1" : "https://test.cors.workers.dev/?https://yt2009.truehosting.net/youtubei/v1"
+            return this.f.dm ? "https://" + this.f.dm : this.f.AB ? "/youtubei/v1" : this.f.br ? "http://www-googleapis-test.sandbox.google.com/youtubei/vi" : this.f.Xi ? "https://staging-youtubei.sandbox.googleapis.com/v1" : this.f.$q ? this.f.Yi ? "https://youtubei.googleapis.com/youtubei/vi" : "https://www.googleapis.com/youtubei/vi" : this.f.Zi ? "https://web.archive.org/web/20160228021433/https://www-googleapis-staging.sandbox.google.com/youtubei/v1release" : this.f.Yi ? "https://tv36.pages.dev/youtubei/v1" : "https://tv36.pages.dev/youtubei/v1"
         };
         d.fk = function (a) {
             a = a || {};
@@ -18205,7 +18205,7 @@
             this.f.Nf({
                 appLabel: this.R.label || "unknown",
                 appLoader: this.R.loader || "unknown",
-                backgroundPath: APP_URL + "/assets/" + "default_bg.jpg",
+                backgroundPath: "https://tv25.pages.dev/assets/default_bg.jpg",
                 htmlPath: this.g + "/html",
                 imagePath: this.g + "/img",
                 userAgent: zc
