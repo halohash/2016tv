@@ -5994,7 +5994,7 @@
             zg.f.forEach(function (font) {
                 a.Lp("@font-face", {
                     "font-family": font.name,
-                    src: `url('https://tv25.pages/dev/assets/${font.file}') format('${font.format}')`
+                    src: `url('https://tv25.pages.dev/assets/${font.file}') format('${font.format}')`
                 });
 
                 var styles = {
