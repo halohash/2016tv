@@ -102,11 +102,11 @@ window.labels = {
         }
     } else if (c) {
         window.CLOSURE_NO_DEPS = true;
-        q("https://halohash.github.io/2016tv/assets/app-prod.css");
+        q("https://tv25.pages.dev/assets/app-prod.css");
         n("/app-concat-bundle.js");
     } else {
-        q("https://halohash.github.io/2016tv/assets/app-prod.css");
-        n("https://halohash.github.io/2016tv/assets/app-prod.js");
+        q("https://tv25.pages.dev/assets/app-prod.css");
+        n("https://tv25.pages.dev/assets/app-prod.js");
     }
 
     window.checkBrokenLabel = function() {
