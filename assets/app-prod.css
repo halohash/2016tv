@@ -504,37 +504,37 @@
 
 @font-face {
   font-family: 'Cutive Mono';
-  src: url('https://tv36.pages.dev/assets/fonts/CutiveMono-Regular.woff') format('woff');
+  src: url('https://tv25.pages.dev/assets/fonts/CutiveMono-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'PT Mono';
-  src: url('https://tv36.pages.dev/assets/fonts/PTM55FT.woff') format('woff');
+  src: url('https://tv25.pages.dev/assets/fonts/PTM55FT.woff') format('woff');
 }
 
 @font-face {
   font-family: 'PT Serif Caption';
-  src: url('https://tv36.pages.dev/assets/fonts/PT_Serif-Caption-Web-Regular.woff') format('woff');
+  src: url('https://tv25.pages.dev/assets/fonts/PT_Serif-Caption-Web-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'PT Sans Caption';
-  src: url('https://tv36.pages.dev/assets/fonts/PT_Sans-Caption-Web-Regular.woff') format('woff');
+  src: url('https://tv25.pages.dev/assets/fonts/PT_Sans-Caption-Web-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Handlee';
-  src: url('https://tv36.pages.dev/assets/fonts/Handlee-Regular.woff') format('woff');
+  src: url('https://tv25.pages.dev/assets/fonts/Handlee-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Dancing Script';
-  src: url('https://tv36.pages.dev/assets/fonts/DancingScript-Regular.woff') format('woff');
+  src: url('https://tv25.pages.dev/assets/fonts/DancingScript-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Marcellus SC';
-  src: url('https://tv36.pages.dev/assets/fonts/MarcellusSC-Regular.woff') format('woff');
+  src: url('https://tv25.pages.dev/assets/fonts/MarcellusSC-Regular.woff') format('woff');
 }
 
 body,
@@ -6605,7 +6605,7 @@ p {
 }
 
 .desktop .legend-item .icon {
-  background-image: url(https://tv36.pages.dev/assets/legend-sprite-desktop.png);
+  background-image: url(https://tv25.pages.dev/assets/legend-sprite-desktop.png);
 }
 
 
