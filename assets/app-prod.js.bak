@@ -9944,44 +9944,36 @@
         };
 
         d.gN = function (a) {
-    console.log("d.gN a guide:", a);
 
-    if (a.accountListHeader && a.accountListHeader.activeAccountHeaderRenderer) {
-        console.log("d.gN a guide:", a);
+            console.log("d.gN a guide:", a);
 
-        a = a.accountListHeader.activeAccountHeaderRenderer;
+            if (a.accountListHeader && a.accountListHeader.activeAccountHeaderRenderer) {
 
-        console.log("d.gN activeAccountHeaderRenderer:", a);
+                console.log("d.gN a guide:", a);
 
-        this.micro = localStorage.getItem("guide-status");
+                a = a.accountListHeader.activeAccountHeaderRenderer;
 
-        this.userName = L(localStorage.getItem("guide-name") || "");
-        this.dr = this.$a.g(
-            localStorage.getItem("guide-profile") ||
-            "https://tv25.pages.dev/assets/default_pfp.png"
-        );
+                console.log("d.gN a guide:", a);
 
-        console.log("userName guide:", this.userName);
-        console.log("dr guide:", this.dr);
-
-        if (this.micro) {
-            this.unlimitedStatus = L(this.micro);
-            console.log("unlimitedStatus guide:", this.unlimitedStatus);
-        } else {
-            this.unlimitedStatus = null;
-        }
-
+                // Set userName and dr
+                this.userName = L(a.accountName);
+                this.dr = this.$a.g(a.accountPhoto);
         
-    }
-
-    this.S.J("unlimited-status-update", !!this.unlimitedStatus);
-
-    console.log(
-        "unlimited-status-update event triggered:",
-        !!this.unlimitedStatus
-    );
-
-};
+                // Log values for better clarity
+                console.log("userName guide:", this.userName);
+                console.log("dr guide:", this.dr);
+        
+                // Set unlimitedStatus if available
+                if (a.unlimitedStatus) {
+                    this.unlimitedStatus = L(a.unlimitedStatus[0]);
+                    console.log("unlimitedStatus guide:", this.unlimitedStatus);
+                }
+            }
+        
+            // Log event update
+            this.S.J("unlimited-status-update", !!this.unlimitedStatus);
+            console.log("unlimited-status-update event triggered:", !!this.unlimitedStatus);
+        };
         
         d.tO = function (a) {
             return !!a.guideEntryRenderer
@@ -36109,10 +36101,10 @@
             <div>
                 <div id="user-info-background">
                 <div class="user-info-container">
-                    <div id="guide-user-avatar" style="background-image: url(${localStorage.getItem("guide-profile")}) !important"></div>
+                    <div id="guide-user-avatar" rebound-style="background-image: url({{userAvatar}})"></div>
                     <div class="guide-user-text">
-                    <div class="guide-user-name">${localStorage.getItem("guide-name")}</div>
-                    <div class="guide-user-unlimited">${localStorage.getItem("guide-status")}</div>
+                    <div class="guide-user-name">{{userName}}</div>
+                    <div class="guide-user-unlimited">{{unlimitedStatus}}</div>
                     </div>
                 </div>
                 </div>

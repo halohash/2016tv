@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Settings - Set InnerTube Endpoint</title>
+<title>Settings</title>
 <style>
 body {
   font-family: Arial, sans-serif;
@@ -52,36 +52,12 @@ button {
 </head>
 <body>
 <div class="box">
-  <h2>Set InnerTube Endpoint</h2>
+  <h2>Settings</h2>
 
-  <input id="value" type="text" placeholder="Enter InnerTube URL">
-
-  <button id="save">Save</button>
-
-  <div class="current" id="current"></div>
+  <a href="innertube">InnerTube Endpoint</a>
+  <a href="profile">Profile</a>
+</div>
 </div>
 
-<script>
-const input = document.getElementById("value")
-const current = document.getElementById("current")
-
-function updateDisplay() {
-  const value = localStorage.getItem("innertubeserver")
-  current.textContent = "Current Endpoint: " + (value ?? "(not set)")
-}
-
-document.getElementById("save").onclick = () => {
-  localStorage.setItem("innertubeserver", input.value)
-  updateDisplay()
-}
-
-const existing = localStorage.getItem("innertubeserver")
-
-if (existing !== null) {
-  input.value = existing
-}
-
-updateDisplay()
-</script>
 </body>
 </html>
