@@ -133,6 +133,9 @@ export async function onRequest(context) {
                   "browseId": "FEtopics_movies"
                 }
               },
+            "icon": {
+              "iconType": "FILM"
+            },
               "trackingParams": "CAgQnOQDGAMiEwiIvbvfurWLAxVTk-UHHfUcMH4=",
               "formattedTitle": {
                 "runs": [
@@ -150,6 +153,9 @@ export async function onRequest(context) {
                 "browseEndpoint": {
                   "browseId": "FEtopics_music"
                 }
+              },
+              "icon": {
+                "iconType": "MUSIC"
               },
               "trackingParams": "CAcQtSwYBCITCIi9u9-6tYsDFVOT5Qcd9Rwwfg==",
               "formattedTitle": {
@@ -236,7 +242,6 @@ export async function onRequest(context) {
             "navigationEndpoint": {
               "clickTrackingParams": "CAIQtSwYACITCIi9u9-6tYsDFVOT5Qcd9Rwwfg==",
               "applicationSettingsEndpoint": {
-                "hack": true
               }
             },
             "icon": {
