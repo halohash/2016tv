@@ -1,4 +1,4 @@
-.background, #background, .button, .action-tile, .video-tile, .top, .bottom, {
+.background, #background, .button, .action-tile, .video-tile, .top, .bottom {
     background: #000 url(https://halohash.github.io/directv/dtvassets/dtv_bg.png) top left repeat-x !important;
 }
 
