@@ -321,6 +321,15 @@ var settings3 = function() {
 button.onclick = settings3
 
 document.body.appendChild(button)})()
+function injectStoredThemeCSS() {
+    const cssUrl = localStorage.getItem("theme");
+    if (cssUrl) {
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = cssUrl;
+        document.head.appendChild(link);
+    }
+}
     </script>
 
 </body>
