@@ -330,6 +330,11 @@ function injectStoredThemeCSS() {
         document.head.appendChild(link);
     }
 }
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+        injectStoredThemeCSS();
+    }, 2000);
+});
     </script>
 
 </body>
