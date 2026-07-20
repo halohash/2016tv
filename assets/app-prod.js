@@ -15798,7 +15798,6 @@
         d.Nj = function (a, b, c, e, f) {
             var g = this.D.get();
             e = e || {};
-            g && (e["X-Goog-Visitor-Id"] = g);
             return bm.u.Nj.call(this, a, b, c, e, f)
         };
         d.Tr = function (a, b, c) {
@@ -18348,7 +18347,6 @@
 
         function uo(a, b) {
             var c = null;
-            a.is_sandboxed && (c = {}, c["X-Goog-Visitor-Id"] = b.get());
             return c
         }
         uo.inject = ["runtimeParams", "visitorData"];
